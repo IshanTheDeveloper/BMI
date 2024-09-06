@@ -3,23 +3,28 @@
   padding: 0;
 }
 body {
-  background-image: url("BMI.webp");
+  background-image: url("pb.jpeg");
+  background-size: cover;
 }
 
 .heading {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: white;
-  width: 100%;
-  box-shadow: 0 3px 3px 5px rgb(128, 128, 128, 0.5);
+  backdrop-filter: blur(20px);
+  width: 90%;
+  margin-left: 5vw;
+  margin-top: 2vh;
+  border-radius: 5rem;
 }
 
 #main-heading {
-  background-color: white;
+  color: white;
   font-size: 5vw;
   width: 90%;
   text-align: center;
+  font-family: "Orbitron", sans-serif;
+  font-weight: 700;
 }
 
 #images {
@@ -34,84 +39,140 @@ body {
 }
 #img1 {
   height: 3rem;
+  border-radius: 2rem;
+  background-color: white;
+  border: 2px solid white;
+  &:hover {
+    box-shadow: 0 0 5px 5px white;
+  }
 }
 #img2 {
   height: 3.3rem;
+  border-radius: 5rem;
+  border: 0.5px solid white;
+  background-color: white;
+  &:hover {
+    box-shadow: 0 0 5px 5px white;
+  }
 }
-
-.weight {
-  margin: 2rem;
+.categories {
   display: flex;
-  gap: 80px;
-  font-size: 40px;
+  justify-content: center;
+  margin-top: 10vh;
+  gap: 2vw;
 }
-
+.category1 {
+  display: inline-block;
+  width: 30vw;
+  font-size: 2rem;
+  color: white;
+  backdrop-filter: blur(20px);
+  height: 50vh;
+  border-radius: 1rem;
+}
+.category2 {
+  display: inline-block;
+  width: 30vw;
+  font-size: 2rem;
+  color: white;
+  backdrop-filter: blur(20px);
+  height: 50vh;
+  border-radius: 1rem;
+}
+.weight,
 .height {
-  margin: 2rem;
-  display: flex;
-  gap: 35px;
-  font-size: 40px;
+  text-align: center;
+  margin-top: 7vh;
 }
-.result {
-  margin: 2rem;
-  display: flex;
-  gap: 68px;
-  font-size: 40px;
+.weight input,
+.height input {
+  border: none;
+  padding: 0.5rem;
+  width: 20vw;
+  margin-top: 3vh;
+  border-radius: 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.result,
+.represent {
+  text-align: center;
+  margin-top: 7vh;
+}
+#bmi,
+#abc {
+  margin-top: 2vh;
 }
 .submit {
-  margin: 6rem;
   display: flex;
-  gap: 10rem;
-  font-size: 50px;
-  margin-right: 50%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5vh;
 }
-button {
-  font-size: 30px;
-  border: 1px solid grey;
+.submit button {
+  padding: 0.5rem;
   border-radius: 1rem;
-  width: 120px;
-  margin-left: 74%;
-}
-#innerText1 {
-  font-size: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: grey;
-}
-#innerText2 {
-  font-size: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: grey;
-}
-#bmi {
-  font-size: 20px;
-  width: 250px;
-  height: 50px;
-  color: gray;
-  background-color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid black;
-}
+  font-size: 1.5rem;
+  border: none;
+  background-color: orange;
+  color: white;
+  font-family: "Orbitron", sans-serif;
+  font-weight: 500;
 
-#abc {
-  font-size: 20px;
-  width: 250px;
-  height: 50px;
-  color: red;
-  background-color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border: 1px solid black;
+  &:hover {
+    background-color: rgb(37, 92, 180);
+    box-shadow: 0 0 3px 3px white;
+    cursor: pointer;
+  }
 }
-.represent {
-  margin: 5rem;
-  display: flex;
-  gap: 280px;
-  font-size: 40px;
+@media (max-width: 400px) {
+  body {
+    background-image: url(pb2.jpg);
+  }
+  .heading {
+    margin-top: 1vh;
+    height: 5vh;
+  }
+  #img1,
+  #img2 {
+    height: 3vh;
+    width: 7vw;
+  }
+  .categories {
+    display: inline-block;
+    margin-top: 2vh;
+  }
+  .category1 {
+    width: 80vw;
+    height: 30vh;
+    margin-left: 10vw;
+  }
+  .category2 {
+    width: 80vw;
+    height: 30vh;
+    margin-left: 10vw;
+    margin-top: 3vh;
+    display: none;
+  }
+  .height,
+  .weight {
+    font-size: 1.2rem;
+    margin-top: 2vh;
+  }
+  .height input,
+  .weight input {
+    width: 50vw;
+    padding: 0.2rem;
+    font-size: 0.8rem;
+  }
+  .represent,
+  .result {
+    margin-top: 2vh;
+    font-size: 1.2rem;
+  }
+  .submit button {
+    padding: 0.3rem;
+    font-size: 1rem;
+    margin-bottom: 20vh;
+  }
 }

@@ -5,6 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BMI CALCULATOR</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fascinate+Inline&family=Orbitron:wght@400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://cdn-icons-png.flaticon.com/128/4380/4380600.png"
+    />
   </head>
   <body>
     <main>
@@ -14,30 +31,38 @@
           <a href="https://github.com/IshanTheDeveloper" target="_blank">
             <img src="github.png" alt="" id="img1" />
           </a>
-          <a href="www.linkedin.com/in/ishan-jaiswal-6146202b6" target="_blank">
+          <a
+            href="https://www.linkedin.com/in/ishan-jaiswal-6146202b6/"
+            target="_blank"
+          >
             <img src="linkedln.png" alt="" id="img2" />
           </a>
         </p>
       </div>
-      <div class="weight">
-        <p>Enter your weight(in kg) :</p>
-        <input type="text" id="innerText1" placeholder="In kilograms" />
+      <div class="categories">
+        <div class="category1">
+          <div class="weight">
+            <p>Enter your weight</p>
+            <input type="text" id="innerText1" placeholder="In kilograms" />
+          </div>
+          <div class="height">
+            <p>Enter your height</p>
+            <input type="text " id="innerText2" placeholder="In meter" />
+          </div>
+        </div>
+        <div class="category2">
+          <div class="result">
+            <p>Body Mass Index</p>
+            <div id="bmi"></div>
+          </div>
+          <div class="represent">
+            <p>Category</p>
+            <div id="abc"></div>
+          </div>
+        </div>
       </div>
-      <div class="height">
-        <p>Enter your height(in meter) :</p>
-        <input type="text " id="innerText2" placeholder="In meter" />
-      </div>
-
       <div class="submit">
-        <button>submit</button>
-      </div>
-      <div class="result">
-        <p>Your Body Mass Index is :</p>
-        <div id="bmi"></div>
-      </div>
-      <div class="represent">
-        <p>Category :</p>
-        <div id="abc"></div>
+        <button>Submit</button>
       </div>
     </main>
     <script src="script.js"></script>
