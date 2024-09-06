@@ -14,37 +14,30 @@ const functioning = () => {
   if (resulting <= 18.5) {
     xyz.innerHTML = "UnderWeight";
     xyz.style.color = "yellowgreen";
-    resulting.style.color = "yellowgreen";
     resultArea.style.display = "inline-block";
   } else if (resulting >= 18.5 && resulting <= 24.9) {
     xyz.innerHTML = "Normal Weight";
-    resulting.style.color = "aqua";
     xyz.style.color = "aqua";
     resultArea.style.display = "inline-block";
   } else if (resulting >= 25.0 && resulting <= 29.9) {
     xyz.innerHTML = "Overweight";
     xyz.style.color = "yellow";
-    resulting.style.color = "yellow";
     resultArea.style.display = "inline-block";
   } else if (resulting >= 30.0) {
     xyz.innerHTML = "Obese";
     xyz.style.color = "goldenrod";
-    resulting.style.color = "goldenrod";
     resultArea.style.display = "inline-block";
   } else if (resulting >= 30.0 && resulting <= 34.9) {
     xyz.innerHTML = "Obese Class I";
     xyz.style.color = "goldenrod";
-    resulting.style.color = "goldenrod";
     resultArea.style.display = "inline-block";
   } else if (resulting >= 35.0 && resulting <= 39.9) {
     xyz.innerHTML = "Obese Class II";
     xyz.style.color = "goldenrod";
-    resulting.style.color = "goldenrod";
     resultArea.style.display = "inline-block";
   } else if (resulting >= 40) {
     xyz.innerHTML = "Obese Class III";
     xyz.style.color = "goldenrod";
-    resulting.style.color = "goldenrod";
     resultArea.style.display = "inline-block";
   }
 };
